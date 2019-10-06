@@ -7,7 +7,7 @@ if len(p) == n :
 
 for i in range(0, n) :
     for j in range(0, i + 1) : 
-        sum += p[j]
+        sum += p[j] # 자신보다 처리 시간이 작게 걸리는 사람은 모두 더함
 
 print(sum)
 
