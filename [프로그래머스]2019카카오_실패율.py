@@ -18,3 +18,12 @@ def solution(N, stages):
         result[i] = result[i][1]
         
     return result
+
+
+#    denominator = len(stages)
+#    for stage in range(1, N+1):
+#        if denominator != 0:
+#            count = stages.count(stage)
+#            result[stage] = count / denominator
+#            denominator -= count
+# > 이처럼 전체 사람에서 앞 스테이징 머물러있는 사람을 빼는 방법도 좋은듯. 간단하다!
