@@ -7,11 +7,9 @@ def solution(n, s):
     if div == 0 : # 몫이 0이라면, 곱이 최대가 될 수 없음
         answer.append(-1)
     else :
-        for i in range(0, remainder) :  # 나머지 수만큼 1을 더한 원소를 삽입
-            answer.append(int(div) + 1)
         for i in range(0, n - remainder) : 
             answer.append(int(div)) 
-        
-    answer.sort()
+        for i in range(0, remainder) :  # 나머지 수만큼 1을 더한 원소를 삽입
+            answer.append(int(div) + 1)
     
     return answer
